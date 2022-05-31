@@ -27,6 +27,10 @@ function update() {
   clockTime.textContent =
     `${hour}:${minute}:${second}`
   
+  // No need to display seconds in the title
+  document.title =
+    `${hour}:${minute} - Clock`
+  
   // Needs to be constantly refreshed in case of a year or timezone change
   clockProgress.max =
     now.daysInYear * now.hoursInDay
