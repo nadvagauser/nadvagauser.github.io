@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <title>0000:00 - Clock</title>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/temporal-polyfill@0.0.7/dist/global.js"></script>
+  <script defer src="clock.js"></script>
+  
+  <link rel="stylesheet" href="../style.css">
+
+<style>
+.clock {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  
+  font-size: 3vw
+}
+
+.clock__time {
+  font-size: 4em;
+}
+
+.clock__progress {}
+</style>
+
+</head>
+
+<body>
+  <main aria-label="Main content">
+    <div class="clock" aria-label="Hour-of-the-year Clock">
+      <label for="clock-time">Time:</label>
+      <output class="clock__time" id="clock-time">0000:00:00</output>
+    
+      <label for="clock-progress">Year Progress:</label>
+      <progress class="clock__progress" id="clock-progress" value="0" max="8766">0%</progress>
+    </div>
+  </main>
+</body>
+</html>
