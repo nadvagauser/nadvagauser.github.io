@@ -21,7 +21,7 @@ function update() {
   
   const second =
     String (now.second)
-    . padStart(2, '0')
+    . padStart (2, '0')
 
   // Formatted output should look like 0000:00:00
   clockTime.textContent =
